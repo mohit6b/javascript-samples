@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+       
+        <title>6.2.Learning Javascript</title>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+         <meta name="viewport" content="width=device-width, initail-scale=1">
+        <link rel="stylesheet" href="main.css">
+        
+    </head>
+    <body>
+        
+        <input id="myInput" type="text" value="test" />
+        
+        <button id="styleChanger"> Change the text</button>
+        
+        <div id="firstDiv">This is some text</div>
+        
+        <script type="text/javascript">
+            
+            var divId = "firstDiv";
+            
+            var newText = document.getElementById("myInput").value;
+            
+            //OR var newText only in place of previous line as we we are using the same line in the function below
+                        
+            document.getElementById("styleChanger").onclick=function(){
+                
+                newText = document.getElementById("myInput").value;
+                
+                document.getElementById(divId).innerHTML=newText;
+            
+            }
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+       
+        <title>7.Learning Javascript</title>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+         <meta name="viewport" content="width=device-width, initail-scale=1">
+        <link rel="stylesheet" href="main.css">
+        
+    </head>
+    <body>
+        
+        <!--<input id="myInput" type="text" value="test" />  -->
+        
+        <button id="styleChanger"> Change the text</button>
+        
+        <div id="firstDiv">This is some text</div>
+        
+        <script type="text/javascript">
+            
+            var myArray = new Array();
+            
+            myArray[0]="pizza";
+            myArray[1]="Chocolate";
+            
+            // We can see the value of variables in the browser at any time using console.log() function. Here we can see the values of myArray
+            
+            console.log(myArray);
+            
+            myotherArray = ["rain","sunshine"];
+            myotherArray.push("snow");
+            myotherArray.push("wind");
+           //delete from myotherArray[1] upto two positions in array
+           // myotherArray.splice(1,2);
+            //add element in array before sunshine. can add one or more element
+            myotherArray.splice(2,0,"hail","cloud");
+            //after sunshine
+            myotherArray.splice(1,0,"hail","cloud");
+            //to show array elements in console
+            console.log(myotherArray);
+            //to show arrayb length in console
+            console.log(myotherArray.length);
+            
+           // var newText = document.getElementById("myInput").value;
+            
+            //OR var newText only in place of previous line as we are using the same line in the function below
+                        
+            document.getElementById("styleChanger").onclick=function(){
+                
+               // newText = document.getElementById("myInput").value;
+                
+                document.getElementById("firstDiv").innerHTML=myArray[0];
+                //next line will overwrite the content of first array on click
+                document.getElementById("firstDiv").innerHTML=myotherArray[0];
+            
+            }
+        
+        </script>
+    </body>
+</html>

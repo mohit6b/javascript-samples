@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+       
+        <title>6.1.Learning Javascript</title>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+         <meta name="viewport" content="width=device-width, initail-scale=1">
+        <link rel="stylesheet" href="main.css">
+        
+    </head>
+    <body>
+        
+        <button id="styleChanger"> Change first div style</button>
+        
+        <div id="firstDiv">This is some text</div>
+        
+        <script type="text/javascript">
+            
+            var divId = "firstDiv";
+            
+            document.getElementById("styleChanger").onclick=function(){
+                
+                document.getElementById(divId).innerHTML="Text transformation using variables";
+            
+            }
+        
+        </script>
+    </body>
+</html>

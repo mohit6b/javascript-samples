@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+       
+        <title>10.Learning Javascript</title>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+         <meta name="viewport" content="width=device-width, initail-scale=1">
+        <link rel="stylesheet" href="main.css">
+        
+    </head>
+    <body>
+        
+        <!--<input id="myInput" type="text" value="test" />  -->
+        
+        <p id="arrayString"> </p>
+        
+        <script type="text/javascript">
+            
+            var arrayString="";
+            
+            var myArray=["pizza", "chocolate", "crisps"];
+            
+            for(var i=0; i<myArray.length; i++){
+                
+                alert(myArray[i]);
+                arrayString = arrayString + myArray[i] + " ";
+            }
+            
+            document.getElementById("arrayString").innerHTML=arrayString;
+        
+        </script>
+    </body>
+</html>
